@@ -1,0 +1,57 @@
+ <beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ <context:annotation-config/>
+ 
+
+
+<bean class="com.spring.autowrinig.byannotation.SpringPro7AWbyAnnotation.Car" id="car"
+>
+</bean>
+
+<bean class="com.spring.autowrinig.byannotation.SpringPro7AWbyAnnotation.Driver" id="d1">
+<property name="id" value="01"></property>
+<property name="name" value="Bhargav"></property>
+<property name="age" value="30"></property>
+</bean>
+
+<bean class="com.spring.autowrinig.byannotation.SpringPro7AWbyAnnotation.Driver" id="d2">
+
+<property name="id" value="02"></property>
+<property name="name" value="Bharath"></property>
+<property name="age" value="27"></property>
+</bean>
+
+<bean class="com.spring.autowrinig.byannotation.SpringPro7AWbyAnnotation.Driver" id="d3">
+<property name="id" value="03"></property>
+<property name="name" value="Bhavesh"></property>
+<property name="age" value="26"></property>
+</bean>
+
+
+
+<!--  
+
+<bean class="com.spring.autowrinig.byannotation.SpringPro7AWbyAnnotation.University" id="univ" 
+autowire="byName">
+</bean>
+
+<bean class="com.spring.autowrinig.byannotation.SpringPro7AWbyAnnotation.Professor" id="pr">
+<property name="p_id" value="122"></property>
+<property name="p_name" value="Amit"></property>
+<property name="p_subject" value="Java"></property>
+
+</bean>
+<bean class="com.spring.autowrinig.byannotation.SpringPro7AWbyAnnotation.Professor" id="p2">
+<property name="p_id" value="123"></property>
+<property name="p_name" value="Anuj"></property>
+<property name="p_subject" value="Python"></property>
+
+</bean>
+
+-->
+</beans>
